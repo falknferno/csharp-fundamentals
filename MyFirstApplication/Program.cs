@@ -1,4 +1,5 @@
-﻿using MyFirstApplication;
+﻿using Exercises;
+using MyFirstApplication;
 
 // See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
@@ -18,7 +19,8 @@ inside that member.
 // Lesson Examples
 // HouseExample();
 // Lesson1Example();
-Lesson2Example();
+// Lesson2Example();
+// Exercise1Example();
 
 
 // Lesson 2 Strings
@@ -51,5 +53,20 @@ void Lesson1Example()
     myLesson.IntegralExample();
     myLesson.ConvertFloatToInt();
     myLesson.LongFromInt();
+
+}
+
+// Exercise 1
+void Exercise1Example()
+{
+    Exercise1 myExercise = new Exercise1();
+    myExercise.IntegralExample();
+    myExercise.IntFromByte();
+    myExercise.LongFromShort();
+    myExercise.FloatFromInt();
+    myExercise.ConvertDoubleToLong();
+    myExercise.ConvertFloatToInt();
+    myExercise.ConvertLongToShort();
+    myExercise.Integrals();
 
 }
