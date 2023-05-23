@@ -1,6 +1,6 @@
 ﻿
 
-namespace Exercises;
+namespace MyFirstApplication;
 
 internal class Exercise2
 {
@@ -40,14 +40,14 @@ internal class Exercise2
 
     public string MyEscapeExample()
     {
-        return "Jack and Jill /nwent up the hill /nto fetch a pale of water." +
-            "/nJack fell down and broke his crown /nand Jill came tumbling after.";
+        return "Jack and Jill \nwent up the hill \nto fetch a bowl of water. \nJack fell down and brok his crown \nand Jill came tumbling after.";
+           
     }
 
     public string MyInterpolationExample(string name, string movie, string snack, string drink)
     {
-        return $"My name is {name}, my favorite movie is{movie}, my favorite \tsnack \nis" +
-            $"{snack}, and my favorite drink is {drink}.";
+        return $"My name is {name}, my favorite movie is {movie}, my favorite snack are {snack}, and my favorite drink \nis {drink}";
+
     }
 
     

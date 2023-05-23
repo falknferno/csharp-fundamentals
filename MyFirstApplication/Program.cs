@@ -1,5 +1,5 @@
 ﻿using DocumentFormat.OpenXml.InkML;
-using Exercises;
+using MyFirstApplication;
 using MyFirstApplication;
 
 // See https://aka.ms/new-console-template for more information
@@ -23,6 +23,20 @@ inside that member.
 // Lesson2Example();
 // Exercise1Example();
 // Exercise2Example();
+// Lesson3Example()
+
+// Lesson3 Operators and Overflow Checking
+void Lesson3Example()
+{
+    Lesson3 myLesson3 = new Lesson3();
+    // myLesson3.BasicCheckedOperator(14);
+    // myLesson3.BasicCheckedExample2();
+    // int alpha = 2147483647;
+    // int total = alpha + 1;
+    // Console.WriteLine(total);
+    // -2147483639
+}
+
 
 // Exercise 2
 void Exercise2Example()
@@ -65,7 +79,7 @@ void Lesson2Example()
     myLesson2.MyEscapeExample();
     Console.WriteLine(myLesson2.MyEscapeExample());
     myLesson2.MyJoinedStrings("CSharp", "Rules");
-    Console.WriteLine(myLesson2.MyInterpolationExample("pizza",3));
+    Console.WriteLine(myLesson2.MyInterpolationExample("pizza", 3));
     myLesson2.MyOtherInterpolation();
 }
 
