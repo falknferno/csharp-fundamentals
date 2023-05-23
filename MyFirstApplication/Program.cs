@@ -1,4 +1,6 @@
-﻿using MyFirstApplication;
+﻿using DocumentFormat.OpenXml.InkML;
+using Exercises;
+using MyFirstApplication;
 
 // See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
@@ -18,8 +20,38 @@ inside that member.
 // Lesson Examples
 // HouseExample();
 // Lesson1Example();
-Lesson2Example();
+// Lesson2Example();
+// Exercise1Example();
+// Exercise2Example();
 
+// Exercise 2
+void Exercise2Example()
+{
+    Exercise2 myExercise2 = new Exercise2();
+    myExercise2.myTrimExample();
+    int able = myExercise2.MyStringLength();
+    Console.WriteLine(able);
+    myExercise2.MyContainsExample("Hello World");
+    myExercise2.MyExampleChar();
+    myExercise2.MyEscapeExample();
+    Console.WriteLine(myExercise2.MyEscapeExample());
+    Console.WriteLine(myExercise2.MyInterpolationExample("Anthony", "The Matrix", "pizza rolls", "root beer"));
+        
+}
+
+// Exercise 1
+void Exercise1Example()
+{
+    Exercise1 myExercise1 = new Exercise1();
+    myExercise1.IntegralExample();
+    myExercise1.IntFromByte();
+    myExercise1.LongFromShort();
+    myExercise1.FloatFromInt();
+    myExercise1.ConvertDoubleToLong();
+    myExercise1.ConvertFloatToInt();
+    myExercise1.ConvertLongToShort();
+    myExercise1.Integrals();
+}
 
 // Lesson 2 Strings
 void Lesson2Example()
@@ -53,3 +85,4 @@ void Lesson1Example()
     myLesson.LongFromInt();
 
 }
+
