@@ -1,6 +1,4 @@
-﻿using DocumentFormat.OpenXml.InkML;
-using MyFirstApplication;
-using MyFirstApplication;
+﻿using MyFirstApplication;
 
 // See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
@@ -22,8 +20,18 @@ inside that member.
 // Lesson1Example();
 // Lesson2Example();
 // Exercise1Example();
-// Exercise2Example();
-// Lesson3Example()
+// Exercises2Example();
+// Lesson3Example();
+Exercise3Example();
+
+void Exercise3Example()
+{
+     Exercise3 myExercise3 = new Exercise3();
+     // myExercise3.Arithmetic();
+     // myExercise3.Modulus(542);
+    myExercise3.Compound(10, 32, 12, 3, 30, 37);
+}
+
 
 // Lesson3 Operators and Overflow Checking
 void Lesson3Example()
@@ -31,17 +39,21 @@ void Lesson3Example()
     Lesson3 myLesson3 = new Lesson3();
     // myLesson3.BasicCheckedOperator(14);
     // myLesson3.BasicCheckedExample2();
-    // int alpha = 2147483647;
-    // int total = alpha + 1;
-    // Console.WriteLine(total);
-    // -2147483639
+    // myLesson3.BasicUncheckedExample();
+    // myLesson3.BasicMath();
+    // myLesson3.BasicModulus(783);
+    // myLesson3.BasicBooleanLogical(true, false);
+    // myLesson3.BasicCompoundExample(12, 35, 9);
+    // myLesson3.BasicRelationalExample("Tom", "Tim");
+    // myLesson3.MyIncrDecrExample();
+    
 }
 
 
 // Exercise 2
-void Exercise2Example()
+void Exercises2Example()
 {
-    Exercise2 myExercise2 = new Exercise2();
+    Exercises2 myExercise2 = new Exercises2();
     myExercise2.myTrimExample();
     int able = myExercise2.MyStringLength();
     Console.WriteLine(able);
@@ -50,7 +62,7 @@ void Exercise2Example()
     myExercise2.MyEscapeExample();
     Console.WriteLine(myExercise2.MyEscapeExample());
     Console.WriteLine(myExercise2.MyInterpolationExample("Anthony", "The Matrix", "pizza rolls", "root beer"));
-        
+
 }
 
 // Exercise 1
