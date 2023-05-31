@@ -22,14 +22,33 @@ inside that member.
 // Exercise1Example();
 // Exercises2Example();
 // Lesson3Example();
-Exercise3Example();
+// Exercise3Example();
+Lesson4Example();
+
+
+// Lesson 4 Control Flow
+void Lesson4Example()
+{
+    Lesson4 myLesson4 = new Lesson4();
+    // myLesson4.BasicIfStatement(11);
+    // myLesson4.BasicIfElseStatement(12);
+    // myLesson4.BasicIfElseChainStatement(5);
+    // myLesson4.BasicAndOrCondition(20, 20);
+    // Console.WriteLine(myLesson4.BasicTernaryExample(35));
+    // myLesson4.BasicSwitchStatement(3);
+    // myLesson4.BasicWhileStatment();
+    // myLesson4.BasicDoStatement();
+    // myLesson4.BasicForStatement();
+    // myLesson4.BasicForeachStatement();
+    myLesson4.BasicJumpStatement();
+}
 
 void Exercise3Example()
 {
-     Exercise3 myExercise3 = new Exercise3();
+     // Exercise3 myExercise3 = new Exercise3();
      // myExercise3.Arithmetic();
      // myExercise3.Modulus(542);
-    myExercise3.Compound(10, 32, 12, 3, 30, 37);
+     // myExercise3.Compound(10, 32, 12, 3, 30, 37);
 }
 
 
