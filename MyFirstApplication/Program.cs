@@ -23,7 +23,17 @@ inside that member.
 // Exercises2Example();
 // Lesson3Example();
 // Exercise3Example();
-Lesson4Example();
+// Lesson4Example();
+Exercise4Example();
+
+void Exercise4Example()
+{
+    Exercise4 myExercise4 = new Exercise4();
+    // myExercise4.IfElse(16, 38);
+    // Console.WriteLine(myExercise4.GradeCheck('G'));
+    myExercise4.Divisor();
+}
+
 
 
 // Lesson 4 Control Flow
@@ -40,7 +50,7 @@ void Lesson4Example()
     // myLesson4.BasicDoStatement();
     // myLesson4.BasicForStatement();
     // myLesson4.BasicForeachStatement();
-    myLesson4.BasicJumpStatement();
+    // myLesson4.BasicJumpStatement();
 }
 
 void Exercise3Example()
@@ -73,14 +83,14 @@ void Lesson3Example()
 void Exercises2Example()
 {
     Exercises2 myExercise2 = new Exercises2();
-    myExercise2.myTrimExample();
-    int able = myExercise2.MyStringLength();
-    Console.WriteLine(able);
-    myExercise2.MyContainsExample("Hello World");
-    myExercise2.MyExampleChar();
-    myExercise2.MyEscapeExample();
-    Console.WriteLine(myExercise2.MyEscapeExample());
-    Console.WriteLine(myExercise2.MyInterpolationExample("Anthony", "The Matrix", "pizza rolls", "root beer"));
+    // myExercise2.myTrimExample();
+    // int able = myExercise2.MyStringLength();
+    // Console.WriteLine(able);
+    // myExercise2.MyContainsExample("Hello World");
+    // myExercise2.MyExampleChar();
+    // myExercise2.MyEscapeExample();
+    // Console.WriteLine(myExercise2.MyEscapeExample());
+    // Console.WriteLine(myExercise2.MyInterpolationExample("Anthony", "The Matrix", "pizza rolls", "root beer"));
 
 }
 
@@ -88,46 +98,46 @@ void Exercises2Example()
 void Exercise1Example()
 {
     Exercise1 myExercise1 = new Exercise1();
-    myExercise1.IntegralExample();
-    myExercise1.IntFromByte();
-    myExercise1.LongFromShort();
-    myExercise1.FloatFromInt();
-    myExercise1.ConvertDoubleToLong();
-    myExercise1.ConvertFloatToInt();
-    myExercise1.ConvertLongToShort();
-    myExercise1.Integrals();
+    // myExercise1.IntegralExample();
+    // myExercise1.IntFromByte();
+    // myExercise1.LongFromShort();
+    // myExercise1.FloatFromInt();
+    // myExercise1.ConvertDoubleToLong();
+    // myExercise1.ConvertFloatToInt();
+    // myExercise1.ConvertLongToShort();
+    // myExercise1.Integrals();
 }
 
 // Lesson 2 Strings
 void Lesson2Example()
 {
     Lesson2 myLesson2 = new Lesson2();
-    myLesson2.MyTrimExample();
-    int able = myLesson2.MyStringLength();
-    Console.WriteLine(able);
-    myLesson2.MyEqualsExample("Hello World");
-    myLesson2.MyExampleChar();
-    myLesson2.MyEscapeExample();
-    Console.WriteLine(myLesson2.MyEscapeExample());
-    myLesson2.MyJoinedStrings("CSharp", "Rules");
-    Console.WriteLine(myLesson2.MyInterpolationExample("pizza", 3));
-    myLesson2.MyOtherInterpolation();
+    // myLesson2.MyTrimExample();
+    // int able = myLesson2.MyStringLength();
+    // Console.WriteLine(able);
+    // myLesson2.MyEqualsExample("Hello World");
+    // myLesson2.MyExampleChar();
+    // myLesson2.MyEscapeExample();
+    // Console.WriteLine(myLesson2.MyEscapeExample());
+    // myLesson2.MyJoinedStrings("CSharp", "Rules");
+    // Console.WriteLine(myLesson2.MyInterpolationExample("pizza", 3));
+    // myLesson2.MyOtherInterpolation();
 }
 
 void HouseExample()
 {
     House myHouse = new House();
-    myHouse.DoorOpenClose();
+    // myHouse.DoorOpenClose();
 }
 
 // Lesson 1 Value Types
 void Lesson1Example()
 {
     Lesson1 myLesson = new Lesson1();
-    myLesson.IntMinMax();
-    myLesson.IntegralExample();
-    myLesson.ConvertFloatToInt();
-    myLesson.LongFromInt();
+    // myLesson.IntMinMax();
+    // myLesson.IntegralExample();
+    // myLesson.ConvertFloatToInt();
+    // myLesson.LongFromInt();
 
-}
+ }
 
