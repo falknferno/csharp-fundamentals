@@ -25,14 +25,25 @@ inside that member.
 // Exercise3Example();
 // Lesson4Example();
 // Exercise4Example();
-Lesson5Example();
+// Lesson5Example();
+Exercise5Example();
+
+void Exercise5Example()
+{
+    Exercise5 myExercise5 = new Exercise5();
+    // int something = myExercise5.OhmsLaw(24, 10);
+    // Console.WriteLine(something);
+    // Console.WriteLine(myExercise5.Grades('B'));
+    myExercise5.PopcornSize(70);
+}
+    
 
 // Lesson 5 Expressions & Pattern Matching
 void Lesson5Example()
 {
     Lesson5 myLesson5 = new Lesson5();
     // myLesson5.IsOperatorExample(34);
-
+    
     Lesson5.Del handler = myLesson5.DelegateMethod;
     // handler("Hello Csharp");
 
@@ -54,8 +65,8 @@ void Lesson5Example()
     // myLesson5.DrinkSize(33);
 
     // Logical Patterns
-    myLesson5.TemperatureGuide(48.6);
-    myLesson5.NumberChoice(3);
+    // myLesson5.TemperatureGuide(48.6);
+    // myLesson5.NumberChoice(3);
 
 
 }
@@ -66,7 +77,7 @@ void Exercise4Example()
     Exercise4 myExercise4 = new Exercise4();
     // myExercise4.IfElse(16, 38);
     // Console.WriteLine(myExercise4.GradeCheck('G'));
-    myExercise4.Divisor();
+    // myExercise4.Divisor();
 }
 
 
@@ -86,14 +97,15 @@ void Lesson4Example()
     // myLesson4.BasicForStatement();
     // myLesson4.BasicForeachStatement();
     // myLesson4.BasicJumpStatement();
+
 }
 
 void Exercise3Example()
 {
-     // Exercise3 myExercise3 = new Exercise3();
-     // myExercise3.Arithmetic();
-     // myExercise3.Modulus(542);
-     // myExercise3.Compound(10, 32, 12, 3, 30, 37);
+    // Exercise3 myExercise3 = new Exercise3();
+    // myExercise3.Arithmetic();
+    // myExercise3.Modulus(542);
+    // myExercise3.Compound(10, 32, 12, 3, 30, 37);
 }
 
 
@@ -110,7 +122,7 @@ void Lesson3Example()
     // myLesson3.BasicCompoundExample(12, 35, 9);
     // myLesson3.BasicRelationalExample("Tom", "Tim");
     // myLesson3.MyIncrDecrExample();
-    
+
 }
 
 
@@ -174,5 +186,5 @@ void Lesson1Example()
     // myLesson.ConvertFloatToInt();
     // myLesson.LongFromInt();
 
- }
+}
 
