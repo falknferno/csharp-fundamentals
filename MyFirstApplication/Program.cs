@@ -9,10 +9,10 @@
 
 /*
  Multi-line comment
-The below statement is a local function. Local functions
-are inside of members and are private by default.  This means
-they are specific to that member and can only be called 
-inside that member.
+ The below statement is a local function. Local functions
+ are inside of members and are private by default.  This means
+ they are specific to that member and can only be called 
+ inside that member.
  */
 
 // Lesson Examples
@@ -26,7 +26,53 @@ inside that member.
 // Lesson4Example();
 // Exercise4Example();
 // Lesson5Example();
-Exercise5Example();
+// Exercise5Example();
+Lesson6Example();
+
+
+void Lesson6Example()
+{
+    // Default Constructor
+    Lesson6 myLesson6 = new Lesson6();
+    Lesson6 myLessonHats = new Lesson6("Cowboy", 7);
+    Lesson6.TryOn theHat = myLessonHats.TryOnHat;
+    theHat($"I tried on a {myLessonHats.HatType} hat that was size {myLessonHats.HatSize}");
+
+    Console.WriteLine();  /*  used as a space between the delegate above and the 
+                                       the stuff that prints out below
+                           */
+
+    // Constructor with 1 parameter
+    Lesson6 myOther6 = new Lesson6(22);
+
+    // Constructor with 2 parameters
+    Lesson6 myHats = new Lesson6("Cowboy", 7); 
+    Console.WriteLine(myHats.HatSize);  // getting value
+    myHats.HatSize = 6; // setting value
+
+    // Method Parameter Modifiers
+    int able = 33, beta = 22, charlie;
+
+    myLesson6.InExample(able);
+    myLesson6.RefExample(ref beta);
+    Console.WriteLine(beta);
+    myLesson6.OutExample(out charlie);
+    Console.WriteLine(charlie);
+
+    Console.WriteLine();
+
+    // Mult-cast Delegate
+    Lesson6.TryOn theNewHat, hangTheHat, multiHat;
+
+    theNewHat = myLesson6.TryOnHat;
+    hangTheHat = myLesson6.HangUpHat;
+    multiHat = theNewHat + hangTheHat;
+
+    theNewHat($"Trying a {myLessonHats.HatType} hat");
+    hangTheHat($"Hanging up my {myLessonHats.HatType} hat");
+    multiHat($"My {myLessonHats.HatType} hat");
+
+}
 
 void Exercise5Example()
 {
@@ -34,7 +80,7 @@ void Exercise5Example()
     // int something = myExercise5.OhmsLaw(24, 10);
     // Console.WriteLine(something);
     // Console.WriteLine(myExercise5.Grades('B'));
-    myExercise5.PopcornSize(70);
+    // myExercise5.PopcornSize(70);
 }
     
 
