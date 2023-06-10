@@ -1,7 +1,7 @@
 ﻿
 namespace MyFirstApplication;
 
-internal class Exercise6
+public class Exercise6
 {
     private string _shoeType;
     private int _shoeSize;
@@ -20,8 +20,18 @@ internal class Exercise6
 
     public Exercise6(string shoeType, int shoeSize)
     {
-        ShoeType = shoeType;
-        ShoeSize = shoeSize;
+        _shoeType = shoeType;
+        _shoeSize = shoeSize;
     }
+
+    public delegate void TryOn(string type);
+
+    public void TryOnShoe(string message)
+    {
+        Console.WriteLine($"TryOnShoe = {message}");
+
+    }
+
+    
 }
 
