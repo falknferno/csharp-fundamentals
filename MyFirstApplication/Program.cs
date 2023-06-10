@@ -1,4 +1,5 @@
-﻿using MyFirstApplication;
+﻿
+using MyFirstApplication;
 
 // See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
@@ -28,13 +29,40 @@
 // Lesson5Example();
 // Exercise5Example();
 // Lesson6Example();
-Exercise6Example();
+// Exercise6Example();
+Lesson7Example();
+
+
+void Lesson7Example()
+{
+    Location myLocation = new Location(34.5, 47.8);
+    Console.WriteLine(myLocation.Latitude);
+    Console.WriteLine(myLocation);
+
+    // Readonly Struct
+    Student myStudent = new Student(10, "Tony");
+    Console.WriteLine(myStudent);
+    Console.WriteLine(myStudent.StudentName);
+
+    // Record
+    Person person = new Person("Nancy", "Drew");
+    Console.WriteLine(person);
+    Console.WriteLine(person.lastName);
+
+    // Struct Record
+    Resolution res = new Resolution(1920, 1800);
+    res.CalculateRes();
+    Console.WriteLine(res);
+
+}
 
 void Exercise6Example()
 {
-    Exercise6 myshoes = new Exercise6("Nike", 12);
-    Console.WriteLine(myshoes.ShoeSize);
-    myshoes.ShoeSize = 12;
+
+    //Exercise6 myExercise6 = new Exercise6("Nike", 12);
+    //Exercise6.TryOn theShoe = myExercise6.TryOnShoe;
+    //theShoe($"I tried on a {myExercise6.ShoeType} shoe that was size {myExercise6.ShoeSize}");
+  
 }
 
 
@@ -71,7 +99,7 @@ void Lesson6Example()
     // Console.WriteLine();
 
     // Mult-cast Delegate
-    Lesson6.TryOn theNewHat, hangTheHat, multiHat;
+    // Lesson6.TryOn theNewHat, hangTheHat, multiHat;
 
     // theNewHat = myLesson6.TryOnHat;
     // hangTheHat = myLesson6.HangUpHat;
@@ -80,6 +108,8 @@ void Lesson6Example()
     // theNewHat($"Trying a {myLessonHats.HatType} hat");
     // hangTheHat($"Hanging up my {myLessonHats.HatType} hat");
     // multiHat($"My {myLessonHats.HatType} hat");
+
+
 
 }
 
