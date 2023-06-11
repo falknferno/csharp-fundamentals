@@ -29,30 +29,42 @@ using MyFirstApplication;
 // Lesson5Example();
 // Exercise5Example();
 // Lesson6Example();
-// Exercise6Example();
-Lesson7Example();
+// Lesson7Example();
+Exercise7Example();
+
+void Exercise7Example()
+{
+    Employee myEmployee = new Employee(10, "Tony");
+    Console.WriteLine(myEmployee.Id);
+    Console.WriteLine(myEmployee);
+
+    // Record
+    Boat size = new Boat(8, 15);
+    size.CalculateBoat();
+    Console.WriteLine(size);
+}
 
 
 void Lesson7Example()
 {
-    Location myLocation = new Location(34.5, 47.8);
-    Console.WriteLine(myLocation.Latitude);
-    Console.WriteLine(myLocation);
+    // Location myLocation = new Location(34.5, 47.8);
+    // Console.WriteLine(myLocation.Latitude);
+    // Console.WriteLine(myLocation);
 
     // Readonly Struct
-    Student myStudent = new Student(10, "Tony");
-    Console.WriteLine(myStudent);
-    Console.WriteLine(myStudent.StudentName);
+    // Student myStudent = new Student(10, "Tony");
+    // Console.WriteLine(myStudent);
+    // Console.WriteLine(myStudent.StudentName);
 
     // Record
-    Person person = new Person("Nancy", "Drew");
-    Console.WriteLine(person);
-    Console.WriteLine(person.lastName);
+    // Person person = new Person("Nancy", "Drew");
+    // Console.WriteLine(person);
+    // Console.WriteLine(person.lastName);
 
     // Struct Record
-    Resolution res = new Resolution(1920, 1800);
-    res.CalculateRes();
-    Console.WriteLine(res);
+    // Resolution res = new Resolution(1920, 1800);
+    // res.CalculateRes();
+    // Console.WriteLine(res);
 
 }
 
