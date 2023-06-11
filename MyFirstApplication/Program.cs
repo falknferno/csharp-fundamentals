@@ -30,11 +30,31 @@ using MyFirstApplication;
 // Exercise5Example();
 // Lesson6Example();
 // Lesson7Example();
-Exercise7Example();
+// Exercise7Example();
+Lesson8Example();
+
+void Lesson8Example()
+{
+    Lesson8 myLesson8 = new Lesson8(3);
+    // Calling constant directly
+    Console.WriteLine(Lesson8.DaysPerMonth);
+
+    // Calculate temperature
+    Console.WriteLine(Lesson8Static.CelciusToFahrenheit(45.6));
+
+    // Static Methods
+    Lesson8.DayCount = 10;
+    myLesson8.CalculateHours(); 
+    Lesson8.CalculateDayCount(); // is added to DayCount = 10...to make 12 when ran
+    Console.WriteLine($"The calculation has been done {Lesson8.DayCount} times".);
+
+    // Static Lambda
+    myLesson8.CalculateHoursV2();
+}
 
 void Exercise7Example()
 {
-    Employee myEmployee = new Employee(10, "Tony");
+    Employee myEmployee = new Employee(10,"Tony");
     Console.WriteLine(myEmployee.Id);
     Console.WriteLine(myEmployee);
 
@@ -47,33 +67,33 @@ void Exercise7Example()
 
 void Lesson7Example()
 {
-    // Location myLocation = new Location(34.5, 47.8);
-    // Console.WriteLine(myLocation.Latitude);
+    Location myLocation = new Location(34.5, 47.8);
+    Console.WriteLine(myLocation.Latitude);
     // Console.WriteLine(myLocation);
 
     // Readonly Struct
-    // Student myStudent = new Student(10, "Tony");
-    // Console.WriteLine(myStudent);
-    // Console.WriteLine(myStudent.StudentName);
+    Student myStudent = new Student(10, "Tony");
+    Console.WriteLine(myStudent);
+    Console.WriteLine(myStudent.StudentName);
 
     // Record
-    // Person person = new Person("Nancy", "Drew");
-    // Console.WriteLine(person);
-    // Console.WriteLine(person.lastName);
+    Person person = new Person("Nancy", "Drew");
+    Console.WriteLine(person);
+    Console.WriteLine(person.lastName);
 
     // Struct Record
-    // Resolution res = new Resolution(1920, 1800);
-    // res.CalculateRes();
-    // Console.WriteLine(res);
+    Resolution res = new Resolution(1920, 1800);
+    res.CalculateRes();
+    Console.WriteLine(res);
 
 }
 
 void Exercise6Example()
 {
 
-    //Exercise6 myExercise6 = new Exercise6("Nike", 12);
-    //Exercise6.TryOn theShoe = myExercise6.TryOnShoe;
-    //theShoe($"I tried on a {myExercise6.ShoeType} shoe that was size {myExercise6.ShoeSize}");
+     Exercise6 myExercise6 = new Exercise6("Nike", 12);
+     Exercise6.TryOn theShoe = myExercise6.TryOnShoe;
+     theShoe($"I tried on a {myExercise6.ShoeType} shoe that was size {myExercise6.ShoeSize}");
   
 }
 
@@ -82,44 +102,44 @@ void Lesson6Example()
 
 {
     // Default Constructor
-    // Lesson6 myLesson6 = new Lesson6();
-    // Lesson6 myLessonHats = new Lesson6("Cowboy", 7);
-    // Lesson6.TryOn theHat = myLessonHats.TryOnHat;
-    // theHat($"I tried on a {myLessonHats.HatType} hat that was size {myLessonHats.HatSize}");
+    Lesson6 myLesson6 = new Lesson6();
+    Lesson6 myLessonHats = new Lesson6("Cowboy", 7);
+    Lesson6.TryOn theHat = myLessonHats.TryOnHat;
+    theHat($"I tried on a {myLessonHats.HatType} hat that was size {myLessonHats.HatSize}");
 
     // Console.WriteLine();    used as a space between the delegate above and the 
                                 // the stuff that prints out below 
                                 
 
     // Constructor with 1 parameter
-    // Lesson6 myOther6 = new Lesson6(22);
+    Lesson6 myOther6 = new Lesson6(22);
 
     // Constructor with 2 parameters
-    // Lesson6 myHats = new Lesson6("Cowboy", 7); 
-    // Console.WriteLine(myHats.HatSize);  // getting value
-    // myHats.HatSize = 6; // setting value
+    Lesson6 myHats = new Lesson6("Cowboy", 7); 
+    Console.WriteLine(myHats.HatSize);  // getting value
+    myHats.HatSize = 6; // setting value
 
     // Method Parameter Modifiers
-    // int able = 33, beta = 22, charlie;
+    int able = 33, beta = 22, charlie;
 
-    // myLesson6.InExample(able);
-    // myLesson6.RefExample(ref beta);
-    // Console.WriteLine(beta);
-    // myLesson6.OutExample(out charlie);
-    // Console.WriteLine(charlie);
+    myLesson6.InExample(able);
+    myLesson6.RefExample(ref beta);
+    Console.WriteLine(beta);
+    myLesson6.OutExample(out charlie);
+    Console.WriteLine(charlie);
 
     // Console.WriteLine();
 
     // Mult-cast Delegate
-    // Lesson6.TryOn theNewHat, hangTheHat, multiHat;
+    Lesson6.TryOn theNewHat, hangTheHat, multiHat;
 
-    // theNewHat = myLesson6.TryOnHat;
-    // hangTheHat = myLesson6.HangUpHat;
-    // multiHat = theNewHat + hangTheHat;
+    theNewHat = myLesson6.TryOnHat;
+    hangTheHat = myLesson6.HangUpHat;
+    multiHat = theNewHat + hangTheHat;
 
-    // theNewHat($"Trying a {myLessonHats.HatType} hat");
-    // hangTheHat($"Hanging up my {myLessonHats.HatType} hat");
-    // multiHat($"My {myLessonHats.HatType} hat");
+    theNewHat($"Trying a {myLessonHats.HatType} hat");
+    hangTheHat($"Hanging up my {myLessonHats.HatType} hat");
+    multiHat($"My {myLessonHats.HatType} hat");
 
 
 
@@ -128,10 +148,10 @@ void Lesson6Example()
 void Exercise5Example()
 {
     Exercise5 myExercise5 = new Exercise5();
-    // int something = myExercise5.OhmsLaw(24, 10);
-    // Console.WriteLine(something);
-    // Console.WriteLine(myExercise5.Grades('B'));
-    // myExercise5.PopcornSize(70);
+    int something = myExercise5.OhmsLaw(24, 10);
+    Console.WriteLine(something);
+    Console.WriteLine(myExercise5.Grades('B'));
+    myExercise5.PopcornSize(70);
 }
     
 
@@ -139,31 +159,31 @@ void Exercise5Example()
 void Lesson5Example()
 {
     Lesson5 myLesson5 = new Lesson5();
-    // myLesson5.IsOperatorExample(34);
+    myLesson5.IsOperatorExample(34);
     
     Lesson5.Del handler = myLesson5.DelegateMethod;
-    // handler("Hello Csharp");
+    handler("Hello Csharp");
 
     // Func Delegate
     Func<int, int> add = myLesson5.Sum;
-    // Console.WriteLine($"func example = {add(23)}");
+    Console.WriteLine($"func example = {add(23)}");
 
     // Lambda Expression
-    // myLesson5.LambdaSquare();
-    // myLesson5.LambdaGreeting();
+    myLesson5.LambdaSquare();
+    myLesson5.LambdaGreeting();
 
     // Switch Expression
     string value1 = myLesson5.BasicSwitch("red");
-    // Console.WriteLine(value1);
+    Console.WriteLine(value1);
     string value2 = myLesson5.FavoriteColor("green");
-    // Console.WriteLine(value2);
+    Console.WriteLine(value2);
 
     // Relational Pattern
-    // myLesson5.DrinkSize(33);
+    myLesson5.DrinkSize(33);
 
     // Logical Patterns
-    // myLesson5.TemperatureGuide(48.6);
-    // myLesson5.NumberChoice(3);
+    myLesson5.TemperatureGuide(48.6);
+    myLesson5.NumberChoice(3);
 
 
 }
@@ -172,9 +192,9 @@ void Lesson5Example()
 void Exercise4Example()
 {
     Exercise4 myExercise4 = new Exercise4();
-    // myExercise4.IfElse(16, 38);
-    // Console.WriteLine(myExercise4.GradeCheck('G'));
-    // myExercise4.Divisor();
+    myExercise4.IfElse(16, 38);
+    Console.WriteLine(myExercise4.GradeCheck('G'));
+    myExercise4.Divisor();
 }
 
 
@@ -183,26 +203,26 @@ void Exercise4Example()
 void Lesson4Example()
 {
     Lesson4 myLesson4 = new Lesson4();
-    // myLesson4.BasicIfStatement(11);
-    // myLesson4.BasicIfElseStatement(12);
-    // myLesson4.BasicIfElseChainStatement(5);
-    // myLesson4.BasicAndOrCondition(20, 20);
-    // Console.WriteLine(myLesson4.BasicTernaryExample(35));
-    // myLesson4.BasicSwitchStatement(3);
-    // myLesson4.BasicWhileStatment();
-    // myLesson4.BasicDoStatement();
-    // myLesson4.BasicForStatement();
-    // myLesson4.BasicForeachStatement();
-    // myLesson4.BasicJumpStatement();
+    myLesson4.BasicIfStatement(11);
+    myLesson4.BasicIfElseStatement(12);
+    myLesson4.BasicIfElseChainStatement(5);
+    myLesson4.BasicAndOrCondition(20, 20);
+    Console.WriteLine(myLesson4.BasicTernaryExample(35));
+    myLesson4.BasicSwitchStatement(3);
+    myLesson4.BasicWhileStatment();
+    myLesson4.BasicDoStatement();
+    myLesson4.BasicForStatement();
+    myLesson4.BasicForeachStatement();
+    myLesson4.BasicJumpStatement();
 
 }
 
 void Exercise3Example()
 {
-    // Exercise3 myExercise3 = new Exercise3();
-    // myExercise3.Arithmetic();
-    // myExercise3.Modulus(542);
-    // myExercise3.Compound(10, 32, 12, 3, 30, 37);
+    Exercise3 myExercise3 = new Exercise3();
+    myExercise3.Arithmetic();
+    myExercise3.Modulus(542);
+    myExercise3.Compound(10, 32, 12, 3, 30, 37);
 }
 
 
@@ -210,15 +230,15 @@ void Exercise3Example()
 void Lesson3Example()
 {
     Lesson3 myLesson3 = new Lesson3();
-    // myLesson3.BasicCheckedOperator(14);
-    // myLesson3.BasicCheckedExample2();
-    // myLesson3.BasicUncheckedExample();
-    // myLesson3.BasicMath();
-    // myLesson3.BasicModulus(783);
-    // myLesson3.BasicBooleanLogical(true, false);
-    // myLesson3.BasicCompoundExample(12, 35, 9);
-    // myLesson3.BasicRelationalExample("Tom", "Tim");
-    // myLesson3.MyIncrDecrExample();
+    myLesson3.BasicCheckedOperator(14);
+    myLesson3.BasicCheckedExample2();
+    myLesson3.BasicUncheckedExample();
+    myLesson3.BasicMath();
+    myLesson3.BasicModulus(783);
+    myLesson3.BasicBooleanLogical(true, false);
+    myLesson3.BasicCompoundExample(12, 35, 9);
+    myLesson3.BasicRelationalExample("Tom", "Tim");
+    myLesson3.MyIncrDecrExample();
 
 }
 
@@ -227,14 +247,14 @@ void Lesson3Example()
 void Exercises2Example()
 {
     Exercises2 myExercise2 = new Exercises2();
-    // myExercise2.myTrimExample();
-    // int able = myExercise2.MyStringLength();
-    // Console.WriteLine(able);
-    // myExercise2.MyContainsExample("Hello World");
-    // myExercise2.MyExampleChar();
-    // myExercise2.MyEscapeExample();
-    // Console.WriteLine(myExercise2.MyEscapeExample());
-    // Console.WriteLine(myExercise2.MyInterpolationExample("Anthony", "The Matrix", "pizza rolls", "root beer"));
+    myExercise2.myTrimExample();
+    int able = myExercise2.MyStringLength();
+    Console.WriteLine(able);
+    myExercise2.MyContainsExample("Hello World");
+    myExercise2.MyExampleChar();
+    myExercise2.MyEscapeExample();
+    Console.WriteLine(myExercise2.MyEscapeExample());
+    Console.WriteLine(myExercise2.MyInterpolationExample("Anthony", "The Matrix", "pizza rolls", "root beer"));
 
 }
 
@@ -242,27 +262,27 @@ void Exercises2Example()
 void Exercise1Example()
 {
     Exercise1 myExercise1 = new Exercise1();
-    // myExercise1.IntegralExample();
-    // myExercise1.IntFromByte();
-    // myExercise1.LongFromShort();
-    // myExercise1.FloatFromInt();
-    // myExercise1.ConvertDoubleToLong();
-    // myExercise1.ConvertFloatToInt();
-    // myExercise1.ConvertLongToShort();
-    // myExercise1.Integrals();
+    myExercise1.IntegralExample();
+    myExercise1.IntFromByte();
+    myExercise1.LongFromShort();
+    myExercise1.FloatFromInt();
+    myExercise1.ConvertDoubleToLong();
+    myExercise1.ConvertFloatToInt();
+    myExercise1.ConvertLongToShort();
+    myExercise1.Integrals();
 }
 
 // Lesson 2 Strings
 void Lesson2Example()
 {
     Lesson2 myLesson2 = new Lesson2();
-    // myLesson2.MyTrimExample();
-    // int able = myLesson2.MyStringLength();
-    // Console.WriteLine(able);
-    // myLesson2.MyEqualsExample("Hello World");
-    // myLesson2.MyExampleChar();
-    // myLesson2.MyEscapeExample();
-    // Console.WriteLine(myLesson2.MyEscapeExample());
+    myLesson2.MyTrimExample();
+    int able = myLesson2.MyStringLength();
+    Console.WriteLine(able);
+    myLesson2.MyEqualsExample("Hello World");
+    myLesson2.MyExampleChar();
+    myLesson2.MyEscapeExample();
+    Console.WriteLine(myLesson2.MyEscapeExample());
     // myLesson2.MyJoinedStrings("CSharp", "Rules");
     // Console.WriteLine(myLesson2.MyInterpolationExample("pizza", 3));
     // myLesson2.MyOtherInterpolation();
@@ -271,17 +291,17 @@ void Lesson2Example()
 void HouseExample()
 {
     House myHouse = new House();
-    // myHouse.DoorOpenClose();
+    myHouse.DoorOpenClose();
 }
 
 // Lesson 1 Value Types
 void Lesson1Example()
 {
     Lesson1 myLesson = new Lesson1();
-    // myLesson.IntMinMax();
-    // myLesson.IntegralExample();
-    // myLesson.ConvertFloatToInt();
-    // myLesson.LongFromInt();
+    myLesson.IntMinMax();
+    myLesson.IntegralExample();
+    myLesson.ConvertFloatToInt();
+    myLesson.LongFromInt();
 
 }
 
