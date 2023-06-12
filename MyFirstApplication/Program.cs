@@ -32,7 +32,18 @@ using MyFirstApplication;
 // Lesson7Example();
 // Exercise7Example();
 // Lesson8Example();
-Exercise8Example();
+// Exercise8Example();
+Lesson9Example();
+
+void Lesson9Example()
+{
+    Lesson9 myLesson9 = new Lesson9();
+    Lesson9.Nested nested = new Lesson9.Nested(myLesson9);
+
+    // Access modifiers
+    myLesson9.SampleInternal();
+    myLesson9.SampleProtectedInternal();
+}
 
 void Exercise8Example()
 {
