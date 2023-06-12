@@ -33,7 +33,53 @@ using MyFirstApplication;
 // Exercise7Example();
 // Lesson8Example();
 // Exercise8Example();
-Lesson9Example();
+// Lesson9Example();
+Lesson10Example();
+// HouseUpdated();
+
+void HouseUpdated()
+{
+    // Calling the Default
+    House myHouse = new House();
+    Console.WriteLine(myHouse.RoofType);
+    myHouse.DoorOpenClose();
+
+    // Calling constructor with 2 parameters
+    House mySecond = new House("straw", "bamboo");
+    Console.WriteLine(mySecond.WindowSize);
+    mySecond.DoorOpenClose();
+
+    // Calling constructor with 4 parameters
+    House myThird = new House("dirt", "plastic", "green", 40);
+    Console.WriteLine(myThird.Foundation);
+    myThird.DoorOpenClose();
+}
+
+
+
+
+
+void Lesson10Example()
+{
+    Lesson10 myLesson10 = new Lesson10(); // default constructor
+    // Normal Property
+    myLesson10.Firstname = "Paul"; // value of Paul to property of FirstName, then call it
+    Console.WriteLine(myLesson10.Firstname);
+
+    // calling auto 
+    // myLesson10.LastName = "Smith"; // only works in Lesson10 constructor
+    Console.WriteLine(myLesson10.Id); // default value
+    myLesson10.Id = 1500;
+    Console.WriteLine(myLesson10.Id); // get 1500
+
+    // Expression body property
+    myLesson10.Address = "123 Main St.";
+    Console.WriteLine(myLesson10.Address);
+
+    // 2nd Constructor
+    Lesson10 myOther10 = new Lesson10("Ben", "Franklin", 64119);
+    Console.WriteLine(myOther10.Zipcode);
+}
 
 void Lesson9Example()
 {
@@ -54,7 +100,7 @@ void Exercise8Example()
     Exercise8.CalculateInchCount();
     Console.WriteLine($"The calculation has been done {Exercise8.InchCount} times");
 
-    Console.WriteLine(Exercise8Static.RectangleToSquare(36));
+    Console.WriteLine(Exercise8Static.RectangleToSquare(4));
 }
 
 void Lesson8Example()
