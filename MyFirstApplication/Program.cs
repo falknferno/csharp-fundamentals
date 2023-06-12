@@ -31,25 +31,38 @@ using MyFirstApplication;
 // Lesson6Example();
 // Lesson7Example();
 // Exercise7Example();
-Lesson8Example();
+// Lesson8Example();
+Exercise8Example();
+
+void Exercise8Example()
+{
+    Exercise8 myExercise8 = new Exercise8(12);
+    Console.WriteLine(Exercise8.InchesPerFoot);
+    Exercise8.InchCount = 2;
+    myExercise8.CalculateInches();
+    Exercise8.CalculateInchCount();
+    Console.WriteLine($"The calculation has been done {Exercise8.InchCount} times");
+
+    Console.WriteLine(Exercise8Static.RectangleToSquare(36));
+}
 
 void Lesson8Example()
 {
     Lesson8 myLesson8 = new Lesson8(3);
     // Calling constant directly
-    Console.WriteLine(Lesson8.DaysPerMonth);
+    // Console.WriteLine(Lesson8.DaysPerMonth);
 
     // Calculate temperature
     Console.WriteLine(Lesson8Static.CelciusToFahrenheit(45.6));
 
     // Static Methods
-    Lesson8.DayCount = 10;
-    myLesson8.CalculateHours(); 
-    Lesson8.CalculateDayCount(); // is added to DayCount = 10...to make 12 when ran
-    Console.WriteLine($"The calculation has been done {Lesson8.DayCount} times".);
+    // Lesson8.DayCount = 10;
+    // myLesson8.CalculateHours(); 
+    // Lesson8.CalculateDayCount(); // is added to DayCount = 10...to make 12 when ran
+    // Console.WriteLine($"The calculation has been done {Lesson8.DayCount} times");
 
     // Static Lambda
-    myLesson8.CalculateHoursV2();
+    // myLesson8.CalculateHoursV2();
 }
 
 void Exercise7Example()
