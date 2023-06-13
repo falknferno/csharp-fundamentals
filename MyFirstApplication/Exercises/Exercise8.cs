@@ -1,6 +1,4 @@
-﻿
-
-namespace MyFirstApplication;
+﻿namespace MyFirstApplication;
 
 internal class Exercise8
 {
@@ -29,4 +27,7 @@ internal class Exercise8
         CalculateInchCount();
     }
 
+
 }
+
+

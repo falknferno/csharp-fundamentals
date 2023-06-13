@@ -4,13 +4,17 @@ namespace MyFirstApplication;
 
 internal static class Exercise8Static
 {
-    public static double RectangleToSquare(double length)
+    public static void RectangleAndSquare()
     {
-       return (length * 4);
+        int length = 8;
+        int width = 6;
+        int area = length * width;
+        Console.WriteLine($"The area {length} and {width} is {area}");
     }
+   
 
-    public static double SquareToRectangle(double width)
-    {
-        return (width * 4);
-    }
+    /*
+     
+     */
+
 }

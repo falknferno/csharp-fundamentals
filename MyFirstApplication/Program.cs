@@ -32,9 +32,9 @@ using MyFirstApplication;
 // Lesson7Example();
 // Exercise7Example();
 // Lesson8Example();
-// Exercise8Example();
+Exercise8Example();
 // Lesson9Example();
-Lesson10Example();
+// Lesson10Example();
 // HouseUpdated();
 
 void HouseUpdated()
@@ -93,14 +93,14 @@ void Lesson9Example()
 
 void Exercise8Example()
 {
-    Exercise8 myExercise8 = new Exercise8(12);
-    Console.WriteLine(Exercise8.InchesPerFoot);
-    Exercise8.InchCount = 2;
-    myExercise8.CalculateInches();
-    Exercise8.CalculateInchCount();
-    Console.WriteLine($"The calculation has been done {Exercise8.InchCount} times");
+    // Exercise8 myExercise8 = new Exercise8(12);
+    // Console.WriteLine(Exercise8.InchesPerFoot);
+    // Exercise8.InchCount = 2;
+    // myExercise8.CalculateInches();
+    // Exercise8.CalculateInchCount();
+    // Console.WriteLine($"The calculation has been done {Exercise8.InchCount} times");
 
-    Console.WriteLine(Exercise8Static.RectangleToSquare(4));
+    Exercise8Static.RectangleAndSquare();
 }
 
 void Lesson8Example()
