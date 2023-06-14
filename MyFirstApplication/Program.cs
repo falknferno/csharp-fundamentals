@@ -30,12 +30,27 @@ using MyFirstApplication;
 // Exercise5Example();
 // Lesson6Example();
 // Lesson7Example();
-// Exercise7Example();
+Exercise7Example();
 // Lesson8Example();
-Exercise8Example();
+// Exercise8Example();
 // Lesson9Example();
 // Lesson10Example();
 // HouseUpdated();
+// HorseExample();
+
+void HorseExample()
+{
+    Horse myHorse = new Horse();
+    Console.WriteLine(myHorse.Breed);
+    Console.WriteLine(myHorse.MoveType);
+    Console.WriteLine(myHorse.HairColor);
+
+    Console.WriteLine();
+
+    Horse mySecond = new Horse("mustang", "trots");
+    Console.WriteLine(mySecond.Breed);
+    Console.WriteLine(mySecond.MoveType);
+}
 
 void HouseUpdated()
 {
@@ -100,38 +115,39 @@ void Exercise8Example()
     // Exercise8.CalculateInchCount();
     // Console.WriteLine($"The calculation has been done {Exercise8.InchCount} times");
 
-    Exercise8Static.RectangleAndSquare();
+    Exercise8Stat.RectangleAndSquare();
 }
 
 void Lesson8Example()
 {
     Lesson8 myLesson8 = new Lesson8(3);
     // Calling constant directly
-    // Console.WriteLine(Lesson8.DaysPerMonth);
+    Console.WriteLine(Lesson8.DaysPerMonth);
 
     // Calculate temperature
     Console.WriteLine(Lesson8Static.CelciusToFahrenheit(45.6));
 
     // Static Methods
-    // Lesson8.DayCount = 10;
-    // myLesson8.CalculateHours(); 
-    // Lesson8.CalculateDayCount(); // is added to DayCount = 10...to make 12 when ran
-    // Console.WriteLine($"The calculation has been done {Lesson8.DayCount} times");
+    Lesson8.DayCount = 10;
+    myLesson8.CalculateHours(); 
+    Lesson8.CalculateDayCount(); // is added to DayCount = 10...to make 12 when ran
+    Console.WriteLine($"The calculation has been done {Lesson8.DayCount} times");
 
     // Static Lambda
-    // myLesson8.CalculateHoursV2();
+    myLesson8.CalculateHoursV2();
 }
 
 void Exercise7Example()
 {
-    Employee myEmployee = new Employee(10,"Tony");
-    Console.WriteLine(myEmployee.Id);
-    Console.WriteLine(myEmployee);
+    // Employee myEmployee = new Employee(10,"Tony");
+    // Console.WriteLine(myEmployee.Id);
+    // Console.WriteLine(myEmployee);
 
     // Record
-    Boat size = new Boat(8, 15);
-    size.CalculateBoat();
-    Console.WriteLine(size);
+    BoatExercise myBoatExercise = new BoatExercise();
+    myBoatExercise.CalculateSize(7, 12);
+    
+    
 }
 
 

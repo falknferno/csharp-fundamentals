@@ -2,10 +2,16 @@
 
 namespace MyFirstApplication;
 
-public record struct Boat(int width, int length)
+public record struct BoatExercise()
 {
-    public void CalculateBoat()
+    public void CalculateSize(int width, int length)
     {
-        Console.WriteLine(width * length);
+        int total = length * width;
+        {
+            Console.WriteLine($" The boat is {total} square feet in size");
+        }
+       
     }
+
+    
 }
