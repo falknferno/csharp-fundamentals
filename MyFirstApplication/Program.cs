@@ -30,24 +30,35 @@ using MyFirstApplication;
 // Exercise5Example();
 // Lesson6Example();
 // Lesson7Example();
-Exercise7Example();
+// Exercise7Example();
 // Lesson8Example();
 // Exercise8Example();
 // Lesson9Example();
 // Lesson10Example();
 // HouseUpdated();
-// HorseExample();
+HorseExample();
+// BoatExample();
+
+
+void BoatExample()
+{
+    Boat myBoat = new Boat();
+    Console.WriteLine(myBoat.BoatType.ToString("Speed boat"));
+    Console.WriteLine(myBoat.Travels.ToString("Fast over water"));
+    Console.WriteLine(myBoat.Name.ToString("Falcon"));
+}
+
 
 void HorseExample()
 {
     Horse myHorse = new Horse();
     Console.WriteLine(myHorse.Breed);
     Console.WriteLine(myHorse.MoveType);
-    Console.WriteLine(myHorse.HairColor);
+    Console.WriteLine(myHorse.HairColors);
 
     Console.WriteLine();
 
-    Horse mySecond = new Horse("mustang", "trots");
+    Horse mySecond = new Horse("Mustang", "trots");
     Console.WriteLine(mySecond.Breed);
     Console.WriteLine(mySecond.MoveType);
 }
@@ -69,9 +80,6 @@ void HouseUpdated()
     Console.WriteLine(myThird.Foundation);
     myThird.DoorOpenClose();
 }
-
-
-
 
 
 void Lesson10Example()
@@ -108,12 +116,12 @@ void Lesson9Example()
 
 void Exercise8Example()
 {
-    // Exercise8 myExercise8 = new Exercise8(12);
-    // Console.WriteLine(Exercise8.InchesPerFoot);
-    // Exercise8.InchCount = 2;
-    // myExercise8.CalculateInches();
-    // Exercise8.CalculateInchCount();
-    // Console.WriteLine($"The calculation has been done {Exercise8.InchCount} times");
+    Exercise8 myExercise8 = new Exercise8(12);
+    Console.WriteLine(Exercise8.InchesPerFoot);
+    Exercise8.InchCount = 2;
+    myExercise8.CalculateInches();
+    Exercise8.CalculateInchCount();
+    Console.WriteLine($"The calculation has been done {Exercise8.InchCount} times");
 
     Exercise8Stat.RectangleAndSquare();
 }
