@@ -30,14 +30,14 @@ using MyFirstApplication;
 // Exercise5Example();
 // Lesson6Example();
 // Lesson7Example();
-// Exercise7Example();
+Exercise7Example();
 // Lesson8Example();
 // Exercise8Example();
 // Lesson9Example();
 // Lesson10Example();
 // HouseUpdated();
 // HorseExample();
-BoatExample();
+// BoatExample();
 
 
 void BoatExample()
@@ -152,8 +152,10 @@ void Exercise7Example()
     // Console.WriteLine(myEmployee);
 
     // Record
-    BoatExercise myBoatExercise = new BoatExercise();
-    //myBoatExercise.CalculateSize(7, 12);
+    Boat boat = new Boat("Speed Boat", "Fast over water", "Falcon");
+    Console.WriteLine(boat.boatType);
+    Console.WriteLine(boat.travels);
+    Console.WriteLine(boat.boatName);
     
     
 }
