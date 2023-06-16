@@ -36,16 +36,16 @@ using MyFirstApplication;
 // Lesson9Example();
 // Lesson10Example();
 // HouseUpdated();
-HorseExample();
-// BoatExample();
+// HorseExample();
+BoatExample();
 
 
 void BoatExample()
 {
-    Boat myBoat = new Boat();
-    Console.WriteLine(myBoat.BoatType.ToString("Speed boat"));
-    Console.WriteLine(myBoat.Travels.ToString("Fast over water"));
-    Console.WriteLine(myBoat.Name.ToString("Falcon"));
+    BoatExercise myBoatExercise = new BoatExercise();
+    Console.WriteLine(myBoatExercise._boatType.ToString("Speed boat"));
+    Console.WriteLine(myBoatExercise._travels.ToString("Fast over water"));
+    Console.WriteLine(myBoatExercise._boatName.ToString("Falcon"));
 }
 
 
@@ -153,7 +153,7 @@ void Exercise7Example()
 
     // Record
     BoatExercise myBoatExercise = new BoatExercise();
-    myBoatExercise.CalculateSize(7, 12);
+    //myBoatExercise.CalculateSize(7, 12);
     
     
 }
