@@ -38,7 +38,19 @@ using MyFirstApplication;
 // Lesson10Example();
 // HouseUpdated();
 // HorseExample();
-Boat();
+// Boat();
+Lesson11Example();
+
+void Lesson11Example()
+{
+    Square square = new Square();
+    double total = square.CalculateInteriorAngle();
+    Console.WriteLine(total);
+
+    Triangle triangle = new Triangle();
+    double total2 = triangle.CalculateInteriorAngle();
+    Console.WriteLine(total2);
+}
 
 
 void Boat()
@@ -149,10 +161,10 @@ void Lesson8Example()
 
 void BoatRecord()
 {
-    BoatRecord boat = new BoatRecord("Speed boat", "Fast over water", "Falcon");
-    Console.WriteLine(boat.boatType);
-    Console.WriteLine(boat.travels);
-    Console.WriteLine(boat.boatName);
+    BoatRecord boatrecord = new BoatRecord("Speed boat", "Fast over water", "Falcon");
+    Console.WriteLine(boatrecord.boatType);
+    Console.WriteLine(boatrecord.travels);
+    Console.WriteLine(boatrecord.boatName);
 } 
 
 
