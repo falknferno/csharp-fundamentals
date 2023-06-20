@@ -21,7 +21,7 @@ using MyFirstApplication;
 // Lesson1Example();
 // Lesson2Example();
 // Exercise1Example();
-// Exercises2Example();
+// Exercise2Example();
 // Lesson3Example();
 // Exercise3Example();
 // Lesson4Example();
@@ -123,7 +123,7 @@ void Exercise8Example()
     Exercise8.CalculateInchCount();
     Console.WriteLine($"The calculation has been done {Exercise8.InchCount} times");
 
-    Exercise8Stat.RectangleAndSquare();
+    // Exercise8Stat.RectangleAndSquare();
 }
 
 void Lesson8Example()
@@ -152,10 +152,10 @@ void Exercise7Example()
     // Console.WriteLine(myEmployee);
 
     // Record
-    Boat boat = new Boat("Speed Boat", "Fast over water", "Falcon");
-    Console.WriteLine(boat.boatType);
-    Console.WriteLine(boat.travels);
-    Console.WriteLine(boat.boatName);
+    //Boat boat = new Boat("Speed Boat", "Fast over water", "Falcon");
+    //Console.WriteLine(boat.boatType);
+    //Console.WriteLine(boat.travels);
+    //Console.WriteLine(boat.boatName);
     
     
 }
@@ -340,17 +340,17 @@ void Lesson3Example()
 
 
 // Exercise 2
-void Exercises2Example()
+void Exercise2Example()
 {
-    Exercises2 myExercise2 = new Exercises2();
-    myExercise2.myTrimExample();
+    Exercise2 myExercise2 = new Exercise2();
+    myExercise2.myTrim();
     int able = myExercise2.MyStringLength();
     Console.WriteLine(able);
-    myExercise2.MyContainsExample("Hello World");
-    myExercise2.MyExampleChar();
-    myExercise2.MyEscapeExample();
-    Console.WriteLine(myExercise2.MyEscapeExample());
-    Console.WriteLine(myExercise2.MyInterpolationExample("Anthony", "The Matrix", "pizza rolls", "root beer"));
+    myExercise2.MyContains("Hello World");
+    myExercise2.MyChar();
+    myExercise2.MyEscape();
+    Console.WriteLine(myExercise2.MyEscape());
+    Console.WriteLine(myExercise2.MyInterpolation("Anthony", "The Matrix", "pizza rolls", "root beer"));
 
 }
 
