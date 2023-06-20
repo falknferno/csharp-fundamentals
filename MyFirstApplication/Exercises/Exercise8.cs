@@ -32,7 +32,7 @@ internal class Exercise8
         int length = 8;
         int width = 6;
         int area = length * width;
-        Console.WriteLine($"The area {length} and {width} is {area}");
+        Console.WriteLine($"The area of{length} and {width} is {area}");
 
         /*
          Used a static method and int values to come up with the area of the rectangle/square, with the int value of the area.

@@ -31,9 +31,9 @@ using MyFirstApplication;
 // Lesson6Example();
 // Lesson7Example();
 // Exercise7();
-BoatRecord();
+// BoatRecord();
 // Lesson8Example();
-// Exercise8Example();
+Exercise8Example();
 // Lesson9Example();
 // Lesson10Example();
 // HouseUpdated();
@@ -124,7 +124,7 @@ void Exercise8Example()
     Exercise8.CalculateInchCount();
     Console.WriteLine($"The calculation has been done {Exercise8.InchCount} times");
 
-    // Exercise8Stat.RectangleAndSquare();
+    Exercise8.RectangleAndSquare();
 }
 
 void Lesson8Example()
