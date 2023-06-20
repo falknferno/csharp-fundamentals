@@ -30,7 +30,8 @@ using MyFirstApplication;
 // Exercise5Example();
 // Lesson6Example();
 // Lesson7Example();
-Exercise7Example();
+// Exercise7();
+BoatRecord();
 // Lesson8Example();
 // Exercise8Example();
 // Lesson9Example();
@@ -145,21 +146,19 @@ void Lesson8Example()
     myLesson8.CalculateHoursV2();
 }
 
-void Exercise7Example()
+void BoatRecord()
 {
-    // Employee myEmployee = new Employee(10,"Tony");
-    // Console.WriteLine(myEmployee.Id);
-    // Console.WriteLine(myEmployee);
-
-    // Record
-    //Boat boat = new Boat("Speed Boat", "Fast over water", "Falcon");
-    //Console.WriteLine(boat.boatType);
-    //Console.WriteLine(boat.travels);
-    //Console.WriteLine(boat.boatName);
-    
-    
+    Boat boat = new Boat("Speed boat", "Fast over water", "Falcon");
+    Console.WriteLine(boat.boatType);
+    Console.WriteLine(boat.travels);
+    Console.WriteLine(boat.boatName);
+} 
+void Exercise7()
+{
+     Employee myEmployee = new Employee(10, "Tony");
+     Console.WriteLine(myEmployee.Id);
+     Console.WriteLine(myEmployee);
 }
-
 
 void Lesson7Example()
 {
@@ -186,61 +185,56 @@ void Lesson7Example()
 
 void Exercise6Example()
 {
-
      Exercise6 myExercise6 = new Exercise6("Nike", 12);
      Exercise6.TryOn theShoe = myExercise6.TryOnShoe;
      theShoe($"I tried on a {myExercise6.ShoeType} shoe that was size {myExercise6.ShoeSize}");
-  
 }
 
 
 void Lesson6Example()
-
 {
-    // Default Constructor
-    Lesson6 myLesson6 = new Lesson6();
-    Lesson6 myLessonHats = new Lesson6("Cowboy", 7);
-    Lesson6.TryOn theHat = myLessonHats.TryOnHat;
-    theHat($"I tried on a {myLessonHats.HatType} hat that was size {myLessonHats.HatSize}");
+     // Default Constructor
+     Lesson6 myLesson6 = new Lesson6();
+     Lesson6 myLessonHats = new Lesson6("Cowboy", 7);
+     Lesson6.TryOn theHat = myLessonHats.TryOnHat;
+     theHat($"I tried on a {myLessonHats.HatType} hat that was size {myLessonHats.HatSize}");
 
-    // Console.WriteLine();    used as a space between the delegate above and the 
-                                // the stuff that prints out below 
-                                
-
-    // Constructor with 1 parameter
-    Lesson6 myOther6 = new Lesson6(22);
-
-    // Constructor with 2 parameters
-    Lesson6 myHats = new Lesson6("Cowboy", 7); 
-    Console.WriteLine(myHats.HatSize);  // getting value
-    myHats.HatSize = 6; // setting value
-
-    // Method Parameter Modifiers
-    int able = 33, beta = 22, charlie;
-
-    myLesson6.InExample(able);
-    myLesson6.RefExample(ref beta);
-    Console.WriteLine(beta);
-    myLesson6.OutExample(out charlie);
-    Console.WriteLine(charlie);
-
-    // Console.WriteLine();
-
-    // Mult-cast Delegate
-    Lesson6.TryOn theNewHat, hangTheHat, multiHat;
-
-    theNewHat = myLesson6.TryOnHat;
-    hangTheHat = myLesson6.HangUpHat;
-    multiHat = theNewHat + hangTheHat;
-
-    theNewHat($"Trying a {myLessonHats.HatType} hat");
-    hangTheHat($"Hanging up my {myLessonHats.HatType} hat");
-    multiHat($"My {myLessonHats.HatType} hat");
+     // Console.WriteLine();    used as a space between the delegate above and the 
+     // the stuff that prints out below 
 
 
+     // Constructor with 1 parameter
+     Lesson6 myOther6 = new Lesson6(22);
 
-}
+     // Constructor with 2 parameters
+     Lesson6 myHats = new Lesson6("Cowboy", 7);
+     Console.WriteLine(myHats.HatSize);  // getting value
+     myHats.HatSize = 6; // setting value
 
+     // Method Parameter Modifiers
+     int able = 33, beta = 22, charlie;
+
+     myLesson6.InExample(able);
+     myLesson6.RefExample(ref beta);
+     Console.WriteLine(beta);
+     myLesson6.OutExample(out charlie);
+     Console.WriteLine(charlie);
+
+     // Console.WriteLine();
+
+     // Mult-cast Delegate
+     Lesson6.TryOn theNewHat, hangTheHat, multiHat;
+
+     theNewHat = myLesson6.TryOnHat;
+     hangTheHat = myLesson6.HangUpHat;
+     multiHat = theNewHat + hangTheHat;
+
+     theNewHat($"Trying a {myLessonHats.HatType} hat");
+     hangTheHat($"Hanging up my {myLessonHats.HatType} hat");
+     multiHat($"My {myLessonHats.HatType} hat");
+
+}        
+       
 void Exercise5Example()
 {
     Exercise5 myExercise5 = new Exercise5();
@@ -280,10 +274,7 @@ void Lesson5Example()
     // Logical Patterns
     myLesson5.TemperatureGuide(48.6);
     myLesson5.NumberChoice(3);
-
-
 }
-
 
 void Exercise4Example()
 {
@@ -292,8 +283,6 @@ void Exercise4Example()
     Console.WriteLine(myExercise4.GradeCheck('G'));
     myExercise4.Divisor();
 }
-
-
 
 // Lesson 4 Control Flow
 void Lesson4Example()
@@ -393,11 +382,9 @@ void HouseExample()
 // Lesson 1 Value Types
 void Lesson1Example()
 {
-    Lesson1 myLesson = new Lesson1();
-    myLesson.IntMinMax();
-    myLesson.IntegralExample();
-    myLesson.ConvertFloatToInt();
-    myLesson.LongFromInt();
-
+    Lesson1 myLesson1 = new Lesson1();
+    myLesson1.IntMinMax();
+    myLesson1.IntegralExample();
+    myLesson1.ConvertFloatToInt();
+    myLesson1.LongFromInt();
 }
-
