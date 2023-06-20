@@ -1,11 +1,11 @@
 ﻿
 namespace MyFirstApplication;
 
-internal class BoatExercise
+public class Boat
 {
     public int _boatType;
     public int _travels;
-    public int boatName;
+    public int _boatName;
 
     public int BoatType
     {
@@ -21,8 +21,8 @@ internal class BoatExercise
 
     public int Name
     {
-        get => boatName;
-        set => boatName = value;
+        get => _boatName;
+        set => _boatName = value;
     }
 
 

@@ -6,21 +6,21 @@ public class Horse
 {
     public string Breed { get; init; }
     public string MoveType { get; init; }
-    public string HairColor { get; init; }
+    public string HairColors { get; init; }
 
     public Horse(string breed, string moveType)
-        :this(breed, moveType, "Brown")
+        :this(breed, moveType, "brown and grey")
     {}
 
     public Horse()
-        :this("thorougbred", "gallops")
+        :this("Thorougbred", "gallops")
     {}
 
-    public Horse(string breed, string moveType, string hairColor)
+    public Horse(string breed, string moveType, string hairColors)
     {
         this.Breed = breed;
         this.MoveType = moveType;
-        this.HairColor = hairColor;
+        this.HairColors = hairColors;
     }
 
     

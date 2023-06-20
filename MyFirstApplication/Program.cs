@@ -33,17 +33,17 @@ using MyFirstApplication;
 // Exercise7();
 // BoatRecord();
 // Lesson8Example();
-Exercise8Example();
+// Exercise8Example();
 // Lesson9Example();
 // Lesson10Example();
 // HouseUpdated();
 // HorseExample();
-// BoatExample();
+Boat();
 
 
-void BoatExample()
+void Boat()
 {
-    BoatExercise myBoatExercise = new BoatExercise();
+    Boat myBoatExercise = new Boat();
     Console.WriteLine(myBoatExercise._boatType.ToString("Speed boat"));
     Console.WriteLine(myBoatExercise._travels.ToString("Fast over water"));
     Console.WriteLine(myBoatExercise._boatName.ToString("Falcon"));
@@ -146,13 +146,16 @@ void Lesson8Example()
     myLesson8.CalculateHoursV2();
 }
 
+
 void BoatRecord()
 {
-    Boat boat = new Boat("Speed boat", "Fast over water", "Falcon");
+    BoatRecord boat = new BoatRecord("Speed boat", "Fast over water", "Falcon");
     Console.WriteLine(boat.boatType);
     Console.WriteLine(boat.travels);
     Console.WriteLine(boat.boatName);
 } 
+
+
 void Exercise7()
 {
      Employee myEmployee = new Employee(10, "Tony");
