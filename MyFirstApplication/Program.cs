@@ -37,9 +37,9 @@ using MyFirstApplication;
 // Lesson9Example();
 // Lesson10Example();
 // HouseUpdated();
-// HorseExample();
-// Boat();
-Lesson11Example();
+// Horse();
+Boat();
+// Lesson11Example();
 
 void Lesson11Example()
 {
@@ -55,14 +55,14 @@ void Lesson11Example()
 
 void Boat()
 {
-    Boat myBoatExercise = new Boat();
-    Console.WriteLine(myBoatExercise._boatType.ToString("Speed boat"));
-    Console.WriteLine(myBoatExercise._travels.ToString("Fast over water"));
-    Console.WriteLine(myBoatExercise._boatName.ToString("Falcon"));
+    Boat myBoat = new Boat("Speed boat", "fast over water", "falcon");
+    Console.WriteLine(myBoat.BoatType);
+    Console.WriteLine(myBoat.travels);
+    Console.WriteLine(myBoat.boatName);
 }
 
 
-void HorseExample()
+void Horse()
 {
     Horse myHorse = new Horse();
     Console.WriteLine(myHorse.Breed);
