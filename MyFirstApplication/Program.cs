@@ -41,8 +41,9 @@ using MyFirstApplication;
 // Boat();
 // Lesson11Example();
 // HorseObject();
+BoatObject();
 // Lesson12Example();
-CondoExample();
+// CondoExample();
 
 void CondoExample()
 {
@@ -54,15 +55,14 @@ void CondoExample()
 
 void Lesson12Example()
 {
-    Fruit myFruit = new Fruit();
-    myFruit.EatFruit();
-    myFruit.EatFruit(3);
-
-    Apple myApple = new Apple();
-    myApple.EatFruit();
+    
 }
 
-
+void BoatObject()
+{
+    Dinghy dinghy = new Dinghy();
+    Console.WriteLine("runabout");
+}
 
 void HorseObject()
 { 
