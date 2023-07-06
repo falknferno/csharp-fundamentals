@@ -38,8 +38,38 @@ using MyFirstApplication;
 // Lesson10Example();
 // HouseUpdated();
 // Horse();
-Boat();
+// Boat();
 // Lesson11Example();
+// HorseObject();
+// Lesson12Example();
+CondoExample();
+
+void CondoExample()
+{
+    Condo myCondo = new Condo();
+    myCondo.Maintenance();
+    myCondo.DoorOpenClose();
+    Console.WriteLine(myCondo.RoofType);
+}
+
+void Lesson12Example()
+{
+    Fruit myFruit = new Fruit();
+    myFruit.EatFruit();
+    myFruit.EatFruit(3);
+
+    Apple myApple = new Apple();
+    myApple.EatFruit();
+}
+
+
+
+void HorseObject()
+{ 
+    Foal foal = new Foal();
+    Console.WriteLine("colt");
+
+}
 
 void Lesson11Example()
 {
@@ -55,7 +85,7 @@ void Lesson11Example()
 
 void Boat()
 {
-    Boat myBoat = new Boat("Speed boat", "fast over water", "falcon");
+    Boat myBoat = new Boat("Speed boat", "fast over water", "Falcon");
     Console.WriteLine(myBoat.BoatType);
     Console.WriteLine(myBoat.travels);
     Console.WriteLine(myBoat.boatName);

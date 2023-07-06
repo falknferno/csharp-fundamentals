@@ -22,12 +22,15 @@ public class Horses
 public class Foal : Horses
 {
     public string Age { get; set; }
+       
 
-    public Foal(string breed, string moveType, string haircolors, string age)
-        :base(breed, moveType, "brown and grey", "colt") 
-    {}
+    public Foal(string breed, string moveType, string hairColors, string age)
+        :base(breed, moveType, hairColors, "colt")
+    {
+        Age = age;
+    }
 
-    public Foal(string breed, string moveType, string age)
+    public Foal(string breed, string moveType, string hairColors)
         :this(breed, moveType, "brown and grey", "colt")
     {}
 
