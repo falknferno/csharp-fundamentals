@@ -3,33 +3,20 @@ namespace MyFirstApplication;
 
 public class Boat
 {
-    public string BoatType { get; set; }
-    public string Travels { get; set; }
-    public string BoatName { get; set; }
+    public string _boatType;
+    public string _travels;
+    public string _boatName;
 
-    public Boat (string boatType, string travels, string boatName)
+    public Boat(string boatType, string travels, string boatName)
     {
-        this.BoatType = boatType;
-        this.Travels = travels;
-        this.BoatName = boatName;   
+        this._boatType = boatType;
+        this._travels = travels;
+        this._boatName = boatName;   
     }
 
-    public string boatType
+    public string BoatType
     {
-        get => BoatType;
-        set => BoatType = value;
-    }
-
-    public string travels
-    {
-        get => Travels;
-        set => Travels = value;
-    }
-    
-    public string boatName
-    {
-        get => BoatName;
-        set => BoatName = value;
+        get => _boa
     }
 
 

@@ -40,10 +40,17 @@ using MyFirstApplication;
 // Horse();
 // Boat();
 // Lesson11Example();
-// HorseObject();
-BoatObject();
+// Horses();
+// BoatObject();
 // Lesson12Example();
 // CondoExample();
+// Exercise12();
+
+void Exercise12()
+{
+    Mustang myMustang = new Mustang();
+    myMustang.HorseMoves();
+}
 
 void CondoExample()
 {
@@ -55,19 +62,31 @@ void CondoExample()
 
 void Lesson12Example()
 {
-    
+    Fruit myFruit = new Fruit();
+    myFruit.EatFruit();
+    myFruit.EatFruit(3);
+
+    Apple myApple = new Apple();
+    myApple.EatFruit();
 }
 
 void BoatObject()
 {
     Dinghy dinghy = new Dinghy();
-    Console.WriteLine("runabout");
+    Console.WriteLine(dinghy.BoatType);
+    Console.WriteLine(dinghy.BoatName);
+    Console.WriteLine(dinghy.Travels);
+    Console.WriteLine("Runabout");
+    
 }
 
-void HorseObject()
+void Horses()
 { 
     Foal foal = new Foal();
-    Console.WriteLine("colt");
+    Console.WriteLine(foal.Breed);
+    Console.WriteLine(foal.MoveType);
+    Console.WriteLine(foal.HairColors);
+    Console.WriteLine("Colt");
 
 }
 
@@ -85,16 +104,16 @@ void Lesson11Example()
 
 void Boat()
 {
-    Boat myBoat = new Boat("Speed boat", "fast over water", "Falcon");
+    Boat myBoat = new Boat("Speed Boat", "fast over water", "Falcon");
     Console.WriteLine(myBoat.BoatType);
-    Console.WriteLine(myBoat.travels);
-    Console.WriteLine(myBoat.boatName);
+    Console.WriteLine(myBoat.Travels);
+    Console.WriteLine(myBoat.BoatName);
 }
 
 
 void Horse()
 {
-    Horse myHorse = new Horse();
+    Horse myHorse = new Horse("Thorougbred", "gallops", "brown and grey");
     Console.WriteLine(myHorse.Breed);
     Console.WriteLine(myHorse.MoveType);
     Console.WriteLine(myHorse.HairColors);

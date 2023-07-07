@@ -1,6 +1,4 @@
-﻿
-
-namespace MyFirstApplication;
+﻿namespace MyFirstApplication;
 
 public class Horse
 {
@@ -22,6 +20,11 @@ public class Horse
     public Horse()
         :this("Thorougbred", "gallops")
     {}
+
+    public virtual void HorseMoves()
+    {
+        Console.WriteLine($"My horse {MoveType} very fast.");
+    }
 
 
 
