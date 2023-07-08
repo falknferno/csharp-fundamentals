@@ -44,9 +44,16 @@ using MyFirstApplication;
 // BoatObject();
 // Lesson12Example();
 // CondoExample();
-// Exercise12();
+// Mustang();
+Canoe();
 
-void Exercise12()
+void Canoe()
+{
+    Canoe myCanoe = new Canoe("kayak", "slow", "Falkn", "oars");
+    myCanoe.BoatCruises();
+}
+
+void Mustang()
 {
     Mustang myMustang = new Mustang();
     myMustang.HorseMoves();
