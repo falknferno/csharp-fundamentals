@@ -46,7 +46,15 @@ using MyFirstApplication;
 // CondoExample();
 // Mustang();
 // Canoe();
-Lesson13Example();
+// Lesson13Example();
+Exercise13();
+
+void Exercise13()
+{
+    WaterBirdsDerived myIMovement = new WaterBirdsDerived(4);
+    myIMovement.WaterBirds();
+    
+}
 
 void Lesson13Example()
 {
@@ -64,7 +72,7 @@ void Lesson13Example()
 
 void Canoe()
 {
-    Canoe myCanoe = new Canoe("kayak", "slow", "Falkn", "oars");
+    Canoe myCanoe = new Canoe("speed boat", "fast over water", "Falcon");
     myCanoe.BoatCruises();
 }
 
