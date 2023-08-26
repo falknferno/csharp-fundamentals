@@ -47,7 +47,40 @@ using MyFirstApplication;
 // Mustang();
 // Canoe();
 // Lesson13Example();
-Exercise13();
+// Exercise13();
+// Lesson14Example();
+Exercise14();
+// Lesson15Example();
+
+
+void Lesson15Example()
+{
+    Lesson15 myLesson15 = new Lesson15();
+    // myLesson15.EnumExample();
+    string flavor = myLesson15.FavoriteIceCream(IceCreamFlavors.Chocolate);
+    // Console.WriteLine(flavor);
+    // myLesson15.TupleExample();
+    (int val1, int val2, int val3) = myLesson15.TupleReturnExample(11, 35);
+    Console.WriteLine($"Answers are {val1}, {val2}, {val3}");
+}
+
+void Exercise14()
+{
+    Exercise14 myExercise14 = new Exercise14();
+    //myExercise14.SingleFlavorsArray();
+    myExercise14.MultiIntArrays();
+}
+
+
+void Lesson14Example()
+{
+    Lesson14 myLesson14 = new Lesson14();
+    myLesson14.SingleIntArray();
+    myLesson14.SingleHouseArray();
+    myLesson14.MultiIntArray();
+    myLesson14.MultiStringArray();
+    myLesson14.JaggedArraySample();
+}
 
 void Exercise13()
 {
