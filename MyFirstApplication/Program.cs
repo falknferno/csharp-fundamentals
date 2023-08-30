@@ -52,7 +52,16 @@ using MyFirstApplication;
 // Exercise14();
 // Lesson15Example();
 
-Lesson16Example();
+// Lesson16Example();
+Exercise16();
+
+
+void Exercise16()
+{
+    Exercise16 myExercise16 = new Exercise16();
+    myExercise16.myHorseList();
+    myExercise16.myDictionary();
+}
 
 void Lesson16Example()
 {
