@@ -49,8 +49,17 @@ using MyFirstApplication;
 // Lesson13Example();
 // Exercise13();
 // Lesson14Example();
-Exercise14();
+// Exercise14();
 // Lesson15Example();
+
+Lesson16Example();
+
+void Lesson16Example()
+{
+    Lesson16 myLesson16 = new Lesson16();
+    myLesson16.myListExample();
+    myLesson16.myDictionaryExample();
+}
 
 
 void Lesson15Example()
