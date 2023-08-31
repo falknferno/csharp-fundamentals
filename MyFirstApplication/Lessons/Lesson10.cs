@@ -7,7 +7,7 @@ namespace MyFirstApplication;
  Encapsulation is the process of wrapping data and the code
  into a single unit.
  */
-internal class Lesson10
+public class Lesson10
 {
     private string _firstname;
     private string _address;
