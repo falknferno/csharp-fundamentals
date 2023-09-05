@@ -22,5 +22,18 @@ namespace MyFirstTestProject
             Assert.AreEqual(lastName, myLesson10.LastName);
             Assert.AreEqual(zipCode, myLesson10.Zipcode);
         }
+
+        [TestMethod]
+        public void IdVerify()
+        {
+            int id = 608;
+            Lesson10 myLesson10 = new Lesson10();
+            int ID = id;
+
+            Assert.AreEqual(608, myLesson10.Id);
+        }
+
+       
     }
+
 }
