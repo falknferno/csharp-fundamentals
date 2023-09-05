@@ -52,26 +52,28 @@ using MyFirstApplication.Exercises;
 // Lesson14Example();
 // Exercise14();
 // Lesson15Example();
- Exercise15();
+// Exercise15();
 // Lesson16Example();
 // Exercise16();
 // Lesson17Example();
-// Exercise17();
+Exercise17();
 
 
 void Exercise17()
 {
     Exercise17 myExercise17 = new Exercise17();
-    myExercise17.MyException();
-}
+    // myExercise17.MyException();
+    Horse testHorse = null;
+    myExercise17.myHorse(testHorse);
+}    
 
 
 void Lesson17Example()
 {
     Lesson17 myLesson17 = new Lesson17();
     House testHouse = null;
-    // myLesson17.myThrowExample(testHouse);
-    // myLesson17.MyExceptionExample(testHouse);
+    myLesson17.myThrowExample(testHouse);
+    myLesson17.MyExceptionExample(testHouse);
     myLesson17.MyArrayException();
 }
 
