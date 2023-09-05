@@ -1,5 +1,6 @@
 ﻿
 using MyFirstApplication;
+using MyFirstApplication.Exercises;
 
 // See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
@@ -51,10 +52,18 @@ using MyFirstApplication;
 // Lesson14Example();
 // Exercise14();
 // Lesson15Example();
-
+ Exercise15();
 // Lesson16Example();
 // Exercise16();
-Lesson17Example();
+// Lesson17Example();
+// Exercise17();
+
+
+void Exercise17()
+{
+    Exercise17 myExercise17 = new Exercise17();
+    myExercise17.MyException();
+}
 
 
 void Lesson17Example()
@@ -81,13 +90,22 @@ void Lesson16Example()
     myLesson16.myDictionaryExample();
 }
 
+void Exercise15()
+{
+    Exercise15 myExercise15 = new Exercise15();
+    string movie = myExercise15.ActionMovies(FavoriteMovies.Matrix);
+    Console.WriteLine(movie);
+    myExercise15.AwesomeMovies(FavoriteMovies.Bleach);
+    Console.WriteLine($"My favories movie is Bleach");
+    
+}
 
 void Lesson15Example()
 {
     Lesson15 myLesson15 = new Lesson15();
     myLesson15.EnumExample();
-    string flavor = myLesson15.FavoriteIceCream(IceCreamFlavors.Chocolate);
-    Console.WriteLine(flavor);
+    string flavors = myLesson15.FavoriteIceCream(IceCreamFlavors.Chocolate);
+    Console.WriteLine(flavors);
     myLesson15.TupleExample();
     (int val1, int val2, int val3) = myLesson15.TupleReturnExample(11, 35);
     Console.WriteLine($"Answers are {val1}, {val2}, {val3}");
